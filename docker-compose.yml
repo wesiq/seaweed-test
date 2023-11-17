@@ -1,0 +1,7 @@
+version: '3'
+services:
+  server:
+    image: chrislusf/seaweedfs:latest
+    command: server -s3
+    ports:
+      - "8333:8333"
