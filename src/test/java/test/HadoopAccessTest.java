@@ -16,8 +16,8 @@ class HadoopAccessTest {
     @Test
     void shouldWriteAndReadLargeFile() throws IOException {
         var configuration = new Configuration();
-        configuration.set("fs.s3a.access.key", "any");
-        configuration.set("fs.s3a.secret.key", "any");
+        configuration.set("fs.s3a.access.key", "some_access_key1");
+        configuration.set("fs.s3a.secret.key", "some_secret_key1");
         configuration.set("fs.s3a.endpoint", "http://localhost:8333");
         configuration.set("com.amazonaws.services.s3a.enableV4", "true");
         configuration.set("fs.s3a.path.style.access", "true");

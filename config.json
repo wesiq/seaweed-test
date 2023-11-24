@@ -1,0 +1,22 @@
+{
+  "identities": [
+    {
+      "name": "some_name",
+      "credentials": [
+        {
+          "accessKey": "some_access_key1",
+          "secretKey": "some_secret_key1"
+        }
+      ],
+      "actions": [
+        "Admin",
+        "Read",
+        "ReadAcp",
+        "List",
+        "Tagging",
+        "Write",
+        "WriteAcp"
+      ]
+    }
+  ]
+}

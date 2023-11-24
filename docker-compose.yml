@@ -2,6 +2,11 @@ version: '3'
 services:
   server:
     image: chrislusf/seaweedfs:latest
-    command: server -s3
+    command: server -s3 -s3.config=/config.json -volume.max=50
     ports:
       - "8333:8333"
+    volumes:
+      - type: bind
+        source: ./config.json
+        target: /config.json
+        read_only: true
